@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Films</title>
+  <link rel="stylesheet" th:href="@{/styles/list.css}">
+</head>
+<body>
+
+<h1>All Films</h1>
+<a class="add-link" th:href="@{/films/add}">➕ Add New Film</a>
+
+<table class="styled-table">
+  <thead>
+  <tr>
+    <th>Title</th>
+    <th>Genre</th>
+    <th>Duration</th>
+    <th>Actions</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr th:each="film : ${films}">
+    <td th:text="${film.title}">Title</td>
+    <td th:text="${film.genre}">Genre</td>
+    <td th:text="${film.duration}">Duration</td>
+    <td>
+      <a class="edit-btn" th:href="@{/films/edit/{id}(id=${film.id})}">✏️ Edit</a>
+      <form th:action="@{/films/delete/{id}(id=${film.id})}" method="post" class="inline-form">
+        <button class="delete-btn" type="submit">🗑 Delete</button>
+      </form>
+    </td>
+  </tr>
+  </tbody>
+</table>
+<a class="add-link" th:href="@{/home}">Back to Home</a>
+
+</body>
+</html>

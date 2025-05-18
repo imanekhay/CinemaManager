@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>All Watchers</title>
+    <link rel="stylesheet" th:href="@{/styles/list.css}">
+</head>
+<body>
+<h1>All Watchers</h1>
+
+<a class="add-link" th:href="@{/watcher/add}">➕ Add Watcher</a>
+
+<table class="styled-table">
+    <thead>
+    <tr><th>Name</th><th>Email</th></tr>
+    </thead>
+    <tbody>
+    <tr th:each="watcher : ${watchers}">
+        <td th:text="${watcher.name}">Name</td>
+        <td th:text="${watcher.email}">Email</td>
+    </tr>
+    </tbody>
+</table>
+
+<a class="back-link" th:href="@{/home}">← Back to Home</a>
+
+</body>
+</html>

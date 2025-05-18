@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Add Showtime</title>
+    <link rel="stylesheet" th:href="@{/styles/form.css}">
+</head>
+<body>
+<h1>Add Showtime</h1>
+
+<form class="form-card" th:action="@{/showtime/add}" method="post" th:object="${showtime}">
+    <label>Date & Time:
+        <input type="datetime-local" th:field="*{dateTime}" required />
+    </label>
+
+    <label>Film:
+        <select th:field="*{film.id}" required>
+            <option th:each="film : ${films}" th:value="${film.id}" th:text="${film.title}"></option>
+        </select>
+    </label>
+
+    <div class="form-actions">
+        <button type="submit">Save</button>
+        <a class="back-link" th:href="@{/showtime}">Back to List</a>
+    </div>
+</form>
+
+</body>
+</html>

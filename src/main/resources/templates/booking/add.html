@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Add Booking</title>
+    <link rel="stylesheet" th:href="@{/styles/form.css}">
+</head>
+<body>
+
+<h1>Add Booking</h1>
+
+<form th:action="@{/booking/add}" th:object="${booking}" method="post">
+    <!-- Watcher Dropdown -->
+    <label>Watcher:</label>
+    <select name="watcherId" required>
+        <option th:each="w : ${watchers}" th:value="${w.id}" th:text="${w.name}"></option>
+    </select>
+
+    <!-- Showtime Dropdown -->
+    <label>Showtime:</label>
+    <select name="showtimeId" required>
+        <option th:each="s : ${showtimes}" th:value="${s.id}" th:text="${s.dateTime}"></option>
+    </select>
+
+
+
+    <button type="submit">Add Booking</button>
+</form>
+
+
+
+</body>
+</html>

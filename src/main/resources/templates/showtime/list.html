@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Showtimes</title>
+    <link rel="stylesheet" th:href="@{/styles/list.css}">
+</head>
+<body>
+<h1>Showtimes</h1>
+
+<a class="add-link" th:href="@{/showtime/add}">➕ Add New Showtime</a>
+
+<table class="styled-table">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Date & Time</th>
+        <th>Screen</th>
+        <th>Film</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="st : ${showtimes}">
+        <td th:text="${st.id}"></td>
+        <td th:text="${st.dateTime}"></td>
+        <td th:text="${st.screen}"></td>
+        <td th:text="${st.film.title}"></td>
+        <td>
+            <a class="edit-btn" th:href="@{'/showtime/edit/' + ${st.id}}">✏️ Edit</a>
+            <a class="delete-btn" th:href="@{'/showtime/delete/' + ${st.id}}">🗑 Delete</a>
+        </td>
+    </tr>
+    </tbody>
+</table>
+<a class="add-link" th:href="@{/home}">Back to Home</a>
+
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Add Watcher</title>
+    <link rel="stylesheet" th:href="@{/styles/form.css}">
+</head>
+<body>
+<h1>Add New Watcher</h1>
+
+<form class="form-card" th:action="@{/watcher/add}" method="post" th:object="${watcher}">
+    <label>Name:
+        <input type="text" th:field="*{name}" required />
+    </label>
+
+    <label>Email:
+        <input type="email" th:field="*{email}" required />
+    </label>
+
+    <div class="form-actions">
+        <button type="submit">Save</button>
+        <a class="back-link" th:href="@{/watcher}">Back</a>
+    </div>
+</form>
+
+</body>
+</html>

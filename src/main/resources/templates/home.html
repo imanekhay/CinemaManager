@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Admin Home - Cinema Manager</title>
+    <link rel="stylesheet" th:href="@{/styles/Home.css}">
+</head>
+<body>
+<div class="container">
+    <h1>Welcome, Admin!</h1>
+
+    <nav class="nav-links">
+        <a th:href="@{/films}">🎬 Manage Films</a>
+        <a th:href="@{/showtime/list}">📅 Manage Showtimes</a>
+        <a th:href="@{/watcher}">👤 Manage Watchers</a>
+        <a th:href="@{/booking}">🪑 Manage Bookings</a>
+    </nav>
+
+    <form th:action="@{/logout}" method="post">
+        <button type="submit" class="logout-btn">🚪 Logout</button>
+    </form>
+</div>
+</body>
+</html>
