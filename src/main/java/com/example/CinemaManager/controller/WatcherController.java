@@ -1,5 +1,6 @@
 package com.example.CinemaManager.controller;
 
+<<<<<<< HEAD
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -30,4 +31,7 @@ public class WatcherController {
         watcherRepository.save(watcher);
         return "redirect:/watcher";
     }
+=======
+public class WatcherController {
+>>>>>>> a8867f0bb764eaccad7afc7f243c162b8d3f2aac
 }

@@ -1,5 +1,6 @@
 package com.example.CinemaManager.controller.api;
 
+<<<<<<< HEAD
 import com.example.CinemaManager.entity.Watcher;
 import com.example.CinemaManager.repository.WatcherRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -44,3 +45,7 @@ public class WatcherRestController {
         watcherRepository.deleteById(id);
     }
 }
+=======
+public class WatcherRestController {
+}
+>>>>>>> a8867f0bb764eaccad7afc7f243c162b8d3f2aac

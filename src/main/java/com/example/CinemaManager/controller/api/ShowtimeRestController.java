@@ -1,5 +1,6 @@
 package com.example.CinemaManager.controller.api;
 
+<<<<<<< HEAD
 
 
 import com.example.CinemaManager.entity.Showtime;
@@ -46,4 +47,7 @@ public class ShowtimeRestController {
     public void deleteShowtime(@PathVariable Long id) {
         showtimeRepository.deleteById(id);
     }
+=======
+public class ShowtimeRestController {
+>>>>>>> a8867f0bb764eaccad7afc7f243c162b8d3f2aac
 }

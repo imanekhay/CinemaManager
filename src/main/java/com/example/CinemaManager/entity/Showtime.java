@@ -1,5 +1,6 @@
 package com.example.CinemaManager.entity;
 
+<<<<<<< HEAD
 import jakarta.persistence.Entity;
 
 import jakarta.persistence.Id;
@@ -42,4 +43,7 @@ public class Showtime {
     public List<Booking> getBookings() { return bookings; }
     public void setBookings(List<Booking> bookings) { this.bookings = bookings; }
 
+=======
+public class Showtime {
+>>>>>>> a8867f0bb764eaccad7afc7f243c162b8d3f2aac
 }

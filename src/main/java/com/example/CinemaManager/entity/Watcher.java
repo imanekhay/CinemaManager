@@ -1,5 +1,6 @@
 package com.example.CinemaManager.entity;
 
+<<<<<<< HEAD
 import jakarta.persistence.*;
 
 import java.util.Collections;
@@ -55,3 +56,7 @@ public class Watcher {
     }
 }
 
+=======
+public class Watcher {
+}
+>>>>>>> a8867f0bb764eaccad7afc7f243c162b8d3f2aac

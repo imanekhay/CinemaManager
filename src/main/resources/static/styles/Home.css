@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Home.css */
 
 body {
@@ -69,6 +70,27 @@ h1 {
         font-size: 0.9rem;
         padding: 10px 16px;
     }
+=======
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #181c24;
+    color: #f5f6fa;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    color: #ffb347;
+    margin-bottom: 0.5em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 1em 0;
+    display: flex;
+    gap: 1.5em;
+>>>>>>> a8867f0bb764eaccad7afc7f243c162b8d3f2aac
 }
 
 nav ul li a {

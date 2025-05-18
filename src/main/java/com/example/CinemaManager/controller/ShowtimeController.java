@@ -1,5 +1,6 @@
 package com.example.CinemaManager.controller;
 
+<<<<<<< HEAD
 import com.example.CinemaManager.entity.Showtime;
 import com.example.CinemaManager.entity.Film;
 import com.example.CinemaManager.repository.ShowtimeRepository;
@@ -71,4 +72,7 @@ public class ShowtimeController {
         showtimeRepository.deleteById(id);
         return "redirect:/showtime/list";
     }
+=======
+public class ShowtimeController {
+>>>>>>> a8867f0bb764eaccad7afc7f243c162b8d3f2aac
 }

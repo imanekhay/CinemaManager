@@ -1,5 +1,6 @@
 package com.example.CinemaManager.entity;
 
+<<<<<<< HEAD
 import jakarta.persistence.*;
 
 @Entity
@@ -33,4 +34,7 @@ public class Booking {
     public Showtime getShowtime() { return showtime; }
 
     public void setShowtime(Showtime showtime) { this.showtime = showtime; }
+=======
+public class Booking {
+>>>>>>> a8867f0bb764eaccad7afc7f243c162b8d3f2aac
 }

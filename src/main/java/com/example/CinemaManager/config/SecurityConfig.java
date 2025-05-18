@@ -1,5 +1,6 @@
 package com.example.CinemaManager.config;
 
+<<<<<<< HEAD
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -55,4 +56,7 @@ public class SecurityConfig {
     public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
     }
+=======
+public class SecurityConfig {
+>>>>>>> a8867f0bb764eaccad7afc7f243c162b8d3f2aac
 }
