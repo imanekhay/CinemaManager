@@ -1,6 +1,7 @@
 package com.example.CinemaManager.entity;
 
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.Entity;
 
 import jakarta.persistence.Id;
@@ -11,6 +12,7 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.FetchType;
 import java.util.List;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 
 @Entity
@@ -22,10 +24,12 @@ public class Showtime {
     private String screen;
 
     @ManyToOne
+    @JsonBackReference
     @JoinColumn(name = "film_id")
     private Film film;
 
     @OneToMany(mappedBy = "showtime", cascade = CascadeType.ALL)
+    @JsonBackReference
     private List<Booking> bookings;
 
 

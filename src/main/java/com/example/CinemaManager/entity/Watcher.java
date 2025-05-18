@@ -1,5 +1,6 @@
 package com.example.CinemaManager.entity;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 
 import jakarta.persistence.*;
 
@@ -16,8 +17,10 @@ public class Watcher {
     private String name;
     private String email;
 
-    @OneToMany(mappedBy = "watcher")
+    @OneToMany(mappedBy = "watcher", cascade = CascadeType.ALL)
+    @JsonBackReference
     private List<Booking> bookings;
+
 
     @ManyToMany
     @JoinTable(
@@ -25,6 +28,7 @@ public class Watcher {
             joinColumns = @JoinColumn(name = "watcher_id"),
             inverseJoinColumns = @JoinColumn(name = "film_id")
     )
+    @JsonBackReference
     private List<Film> favoriteFilms;
 
     // ✅ GETTERS & SETTERS

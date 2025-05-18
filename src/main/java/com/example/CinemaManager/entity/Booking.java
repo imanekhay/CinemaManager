@@ -1,6 +1,6 @@
 package com.example.CinemaManager.entity;
 
-
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 
 @Entity
@@ -12,10 +12,13 @@ public class Booking {
 
     @ManyToOne
     @JoinColumn(name = "watcher_id")
+    @JsonBackReference
     private Watcher watcher;
+
 
     @ManyToOne
     @JoinColumn(name = "showtime_id")
+    @JsonBackReference
     private Showtime showtime;
 
     // ✅ Getters and Setters
