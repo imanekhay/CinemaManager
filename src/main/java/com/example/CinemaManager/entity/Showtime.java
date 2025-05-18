@@ -1,6 +1,6 @@
 package com.example.CinemaManager.entity;
 
-<<<<<<< HEAD
+
 import jakarta.persistence.Entity;
 
 import jakarta.persistence.Id;
@@ -15,7 +15,8 @@ import java.util.List;
 
 @Entity
 public class Showtime {
-    @Id @GeneratedValue
+    @Id
+    @GeneratedValue
     private Long id;
     private String dateTime;
     private String screen;
@@ -28,22 +29,44 @@ public class Showtime {
     private List<Booking> bookings;
 
 
-    public Long getId() { return id; }
-    public void setId(Long id) { this.id = id; }
+    public Long getId() {
+        return id;
+    }
 
-    public String getDateTime() { return dateTime; }
-    public void setDateTime(String dateTime) { this.dateTime = dateTime; }
+    public void setId(Long id) {
+        this.id = id;
+    }
 
-    public String getScreen() { return screen; }
-    public void setScreen(String screen) { this.screen = screen; }
+    public String getDateTime() {
+        return dateTime;
+    }
 
-    public Film getFilm() { return film; }
-    public void setFilm(Film film) { this.film = film; }
+    public void setDateTime(String dateTime) {
+        this.dateTime = dateTime;
+    }
 
-    public List<Booking> getBookings() { return bookings; }
-    public void setBookings(List<Booking> bookings) { this.bookings = bookings; }
+    public String getScreen() {
+        return screen;
+    }
 
-=======
-public class Showtime {
->>>>>>> a8867f0bb764eaccad7afc7f243c162b8d3f2aac
+    public void setScreen(String screen) {
+        this.screen = screen;
+    }
+
+    public Film getFilm() {
+        return film;
+    }
+
+    public void setFilm(Film film) {
+        this.film = film;
+    }
+
+    public List<Booking> getBookings() {
+        return bookings;
+    }
+
+    public void setBookings(List<Booking> bookings) {
+        this.bookings = bookings;
+    }
+
 }

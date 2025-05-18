@@ -1,6 +1,6 @@
 package com.example.CinemaManager.controller.api;
 
-<<<<<<< HEAD
+
 import com.example.CinemaManager.entity.Film;
 import com.example.CinemaManager.repository.FilmRepository;
 
@@ -51,7 +51,4 @@ public class FilmRestController {
     public void deleteFilm(@PathVariable Long id) {
         filmRepository.deleteById(id);
     }
-=======
-public class FilmRestController {
->>>>>>> a8867f0bb764eaccad7afc7f243c162b8d3f2aac
 }
