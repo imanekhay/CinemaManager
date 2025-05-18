@@ -14,7 +14,7 @@ import java.util.List;
 public class ShowtimeRestController {
 
     @Autowired
-    private ShowtimeRepository showtimeRepository;
+    public ShowtimeRepository showtimeRepository;
 
     @GetMapping
     public List<Showtime> getAllShowtimes() {

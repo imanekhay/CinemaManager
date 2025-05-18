@@ -13,7 +13,7 @@ import java.util.List;
 public class FilmRestController {
 
     @Autowired
-    private FilmRepository filmRepository;
+    public FilmRepository filmRepository;
 
     // Get all films (GET /api/films)
     @GetMapping

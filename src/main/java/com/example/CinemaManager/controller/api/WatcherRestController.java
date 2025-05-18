@@ -12,7 +12,7 @@ import java.util.List;
 public class WatcherRestController {
 
     @Autowired
-    private WatcherRepository watcherRepository;
+    public WatcherRepository watcherRepository;
 
     @GetMapping
     public List<Watcher> getAllWatchers() {

@@ -11,7 +11,7 @@ import java.util.List;
 public class BookingRestController {
 
     @Autowired
-    private BookingRepository bookingRepository;
+    public BookingRepository bookingRepository;
 
     @GetMapping
     public List<Booking> getAllBookings() {
