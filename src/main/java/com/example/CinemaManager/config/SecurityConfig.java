@@ -40,7 +40,7 @@ public class SecurityConfig {
         return http.build();
     }
 
-    // Simple in-memory user for testing
+
     @Bean
     public UserDetailsService users() {
         return new InMemoryUserDetailsManager(
