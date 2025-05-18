@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Edit Showtime</title>
@@ -19,7 +18,7 @@
 
     <label>Film:
         <select th:field="*{film}" required>
-            <option th:each="film : ${films}" th:value="${film}" th:text="${film.title}"></option>
+            <option th:each="film : ${films}" th:value="${film.id}" th:text="${film.title}"></option>
         </select>
     </label>
 
@@ -31,4 +30,3 @@
 
 </body>
 </html>
-
