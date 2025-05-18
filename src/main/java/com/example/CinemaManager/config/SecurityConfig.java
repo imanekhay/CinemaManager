@@ -25,7 +25,7 @@ public class SecurityConfig {
                         .anyRequest().authenticated()
                 )
                 .formLogin(form -> form
-                        .loginPage("/login")      // your custom login page path (create this if needed)
+                        .loginPage("/login")
                         .defaultSuccessUrl("/home", true)  // after login, redirect to "/" (home page)
                         .permitAll()
                 )
