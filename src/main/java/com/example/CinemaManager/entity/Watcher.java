@@ -4,7 +4,7 @@ import com.fasterxml.jackson.annotation.JsonBackReference;
 
 import jakarta.persistence.*;
 
-import java.util.Collections;
+
 import java.util.List;
 
 @Entity
@@ -33,30 +33,28 @@ public class Watcher {
 
     // ✅ GETTERS & SETTERS
 
-    public Long getId() { return id; }
-
-    public void setId(Long id) { this.id = id; }
-
-    public String getName() { return name; }
-
-    public void setName(String name) { this.name = name; }
-
-    public String getEmail() { return email; }
-
-    public void setEmail(String email) { this.email = email; }
-
-    public List<Booking> getBookings() {
-        return bookings;
+    public Long getId() {
+        return id;
     }
 
-    public void setBookings(List<Booking> bookings) {
-        this.bookings = bookings;
+    public void setId(Long id) {
+        this.id = id;
     }
 
-    public List<Film> getFavoriteFilms() { return favoriteFilms; }
-
-    public void setFavoriteFilms(List<Film> favoriteFilms) {
-        this.favoriteFilms = favoriteFilms;
+    public String getName() {
+        return name;
     }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
 }
-

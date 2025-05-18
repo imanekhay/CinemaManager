@@ -2,7 +2,7 @@ package com.example.CinemaManager.controller;
 
 
 import com.example.CinemaManager.entity.Showtime;
-import com.example.CinemaManager.entity.Film;
+
 import com.example.CinemaManager.repository.ShowtimeRepository;
 import com.example.CinemaManager.repository.FilmRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,7 +10,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
+
 
 @Controller
 @RequestMapping("/showtime")

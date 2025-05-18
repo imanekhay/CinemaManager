@@ -10,9 +10,9 @@ import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.CascadeType;
-import jakarta.persistence.FetchType;
+
 import java.util.List;
-import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 
 
 @Entity
@@ -65,12 +65,6 @@ public class Showtime {
         this.film = film;
     }
 
-    public List<Booking> getBookings() {
-        return bookings;
-    }
 
-    public void setBookings(List<Booking> bookings) {
-        this.bookings = bookings;
-    }
 
 }

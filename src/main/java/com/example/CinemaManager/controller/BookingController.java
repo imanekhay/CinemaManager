@@ -6,8 +6,6 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import com.example.CinemaManager.entity.Booking;
-import com.example.CinemaManager.entity.Watcher;
-import com.example.CinemaManager.entity.Showtime;
 import com.example.CinemaManager.repository.BookingRepository;
 import com.example.CinemaManager.repository.WatcherRepository;
 import com.example.CinemaManager.repository.ShowtimeRepository;
